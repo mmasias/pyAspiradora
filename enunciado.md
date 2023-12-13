@@ -6,9 +6,9 @@ Defina e implemente una manera de representar una superficie (por ejemplo, un re
 
 Las zonas sucias pueden tener hasta 4 niveles de suciedad.
 
-Hecho esto, implemente una aspiradora sobre la superficie y dótela de movimiento. El movimiento es aleatorio en las ocho direcciones, con la misma probabilidad en cada dirección. Asuma que el terreno no está exageradamente sucio, de modo que la aspiradora puede moverse libremente, y está limitada únicamente por las paredes de los bordes.
+Hecho esto, implemente una **aspiradora** sobre la superficie y **dótela de movimiento**. El movimiento es aleatorio en las ocho direcciones, con la misma probabilidad en cada dirección. Asuma que el terreno no está exageradamente sucio, de modo que la aspiradora puede moverse libremente, y está limitada únicamente por las paredes de los bordes.
 
-Agregue a la aspiradora la capacidad de limpiar la superficie, de modo que cuando pase sobre una zona sucia, esta pase a estar limpia. En las zonas de alto nivel de suciedad, la aspiradora reduce en uno el nivel de suciedad por cada pasada
+Agregue a la aspiradora la capacidad de **limpiar la superficie**, de modo que cuando pase sobre una zona sucia, esta pase a estar limpia. En las zonas de alto nivel de suciedad, la aspiradora reduce en uno el nivel de suciedad por cada pasada
 
 <div align=center>
 
@@ -41,7 +41,6 @@ Zona sucísima|`***`
 Aspiradora|`(0)`
 Gato|`"^"`
 Sofá|`[####]`
-Mesa|``
 
 </div>
 
