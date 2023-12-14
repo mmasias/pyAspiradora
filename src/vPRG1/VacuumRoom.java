@@ -21,7 +21,6 @@ public class VacuumRoom {
         };
 
         renderWorld(office);
-
     }
 
     static void renderWorld(int[][] world) {
@@ -31,11 +30,24 @@ public class VacuumRoom {
             }
             System.out.println();
         }
+        System.out.println("Nivel de suciedad: " + calculateDirtLevel(world));
     }
 
     static String showTile(int tile) {
         String[] tiles = { " . ", "...", "ooo", "OOO", "000", "***", "(O)", "---" };
         return tiles[tile];
+    }
+
+    static int calculateDirtLevel(int[][] world) {
+
+        int dirtLevel = 0;
+
+        for (int ejeY = 0; ejeY < world.length; ejeY++) {
+            for (int ejeX = 0; ejeX < world[ejeY].length; ejeX++) {
+                dirtLevel = dirtLevel + world[ejeY][ejeX];
+            }
+        }
+        return dirtLevel;
     }
 
     static void cleanScreen() {

@@ -45,3 +45,22 @@ Para llevar a cabo esta mejora, se hace uso del método `renderWorld`, el cual a
  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
 ```
+
+## Paso 003 - Calcular el nivel de suciedad
+
+Con la matriz que almacena los niveles de suciedad en el suelo ya establecida, el siguiente paso implica calcular el nivel total de suciedad presente. Esto se logra sumando todos los valores individuales de la matriz. Este cálculo proporciona una métrica útil para entender la cantidad total de suciedad en el entorno simulado y puede servir como un indicador clave para medir la eficiencia de la limpieza o para decidir las acciones futuras de la aspiradora. Este proceso no solo agrega una capa de funcionalidad práctica al programa, sino que también introduce un componente analítico que permite una evaluación más profunda del estado del entorno.
+
+```
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  . OOOOOOOOOOOOOOO .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  . ooooooooooooooo .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  . ooo.........ooo .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  . ooooooooooooooo .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  . OOOOOOOOOOOOOOO .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+Nivel de suciedad: 57
+```
