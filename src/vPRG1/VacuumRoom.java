@@ -27,10 +27,15 @@ public class VacuumRoom {
     static void renderWorld(int[][] world) {
         for (int row = 0; row < world.length; row++) {
             for (int column = 0; column < world[row].length; column++) {
-                System.out.print(world[row][column] + " ");
+                System.out.print(showTile(world[row][column]));
             }
             System.out.println();
         }
+    }
+
+    static String showTile(int tile) {
+        String[] tiles = { " . ", "...", "ooo", "OOO", "000", "***", "(O)", "---" };
+        return tiles[tile];
     }
 
     static void cleanScreen() {
